@@ -1,6 +1,12 @@
 #include "monty.h"
-
 #define STACK_SIZE 4
+
+/**
+ * main - entry point for code
+ * @argc: number of arguments
+ * @argv: monty file location
+ * Return: 0 on success
+ **/
 
 int main(int argc, char *argv[])
 {
@@ -29,7 +35,7 @@ int main(int argc, char *argv[])
 	{
 		bytesRead = getline(&currentline, &lineLength, file pointer);
 		lineNumber ++;
-		currentOpcode = strtok(&currentLine, DELIMITERS);
+		currentOpcode = strtok(&currentline, DELIMITERS);
 
 		if (bytesRead >= 0)
 		{
