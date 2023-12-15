@@ -1,7 +1,11 @@
 #include "monty.h"
 
+/**
+ * if_numeric: function that checks if a string represents a numeric value
+ * @str: pointer that dereferences the pointer string
+ *
+ **/
 
-// Function to check if a string represents a numeric value
 int if_numeric(const char *str)
 {
 	// Check if the string is empty or NULL
