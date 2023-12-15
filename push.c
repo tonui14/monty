@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * f_push - Pushes an element onto the stack
+ * @head: Pointer to the head of the stack
+ * @lineNumber: Line number in the file
+ **/
+
 void f_push(stack_t **head, unsigned int lineNumber)
 {
 	int n;
