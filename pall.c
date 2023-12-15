@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * f_pall - prints all elements in the stack
+ * @head: pointer to the head of the stack
+ * @lineNumber: line number in the file
+ *
+ **/
+
 void f_pall(stack_t **head, unsigned int lineNumber)
 {
 	stack_t *s;
