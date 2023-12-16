@@ -43,5 +43,6 @@ void f_pall(stack_t **head, unsigned int lineNumber);
 void f_pop(stack_t **head, unsigned int lineNumber);
 void f_push(stack_t **head, unsigned int lineNumber);
 void f_swap(stack_t **head, unsigned int lineNumber);
-
+void free_stack(stack_t *head);
+void addnode(stack_t **head, int n);
 #endif /* MONTY_H */
