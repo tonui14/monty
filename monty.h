@@ -36,12 +36,12 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-typedef struct {
-	stack_t *head;
-
-} stack_t;
-
-
-
+/* function prototypes */
+int execute(char *currentline, stack_t **myStack, unsigned int lineNumber, FILE *filePointer);
+int if_numeric(const char *str);
+void f_pall(stack_t **head, unsigned int lineNumber);
+void f_pop(stack_t **head, unsigned int lineNumber);
+void f_push(stack_t **head, unsigned int lineNumber);
+void f_swap(stack_t **head, unsigned int lineNumber);
 
 #endif /* MONTY_H */
