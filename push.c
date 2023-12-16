@@ -9,6 +9,9 @@
 void f_push(stack_t **head, unsigned int lineNumber)
 {
 	int n;
+	char *currentArgument;
+	FILE *filePointer;
+	char *currentline;
 	/*Continue until a valid numeric argument is provided*/
 	do
 	{
@@ -22,6 +25,8 @@ void f_push(stack_t **head, unsigned int lineNumber)
 		}
 		/*Convert currentArgument to an integer*/
 		n = atoi(currentArgument);
+		stack_t *myStack = NULL;
+		lineLength = NULL;
 		/*Add the integer to the stack using the addnode function*/
 		/*If malloc fails, print an error message and exit*/
 		if (!addnode(myStack, n))
